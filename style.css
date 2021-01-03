@@ -1,0 +1,92 @@
+body{
+    color:white;
+    margin:0px;
+}
+#background{
+    background-image: linear-gradient(
+      rgba(0,0,0,0.2),
+      rgba(0,0,0,0.2)
+    ),
+    url(https://drive.google.com/uc?id=1-qehRP23dTujkx09xwOPkpHe2NoDGy3B);
+    background-size:cover;
+    background-position:center;
+}
+
+#container{
+    margin:5rem auto;
+    width:100%;
+    font-family: 'Poppins', sans-serif;
+}
+
+@media(min-width:576px){
+    #container{
+        max-width:500px;
+    }
+}
+
+@media(min-width:768px){
+    #container{
+        max-width:700px;
+    }
+}
+
+#title{
+    text-align:center;
+    font-family:'Oswald', sans-serif;
+}
+
+#description{
+    text-align:center;
+    font-style: italic;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+}
+
+#survey-form{
+    background-color:#C19A6B;
+    border-radius: 5px;
+    padding: 2rem 3rem;
+}
+
+#form-group{
+    display:block;
+    margin-bottom:25px;
+}
+
+label{
+    display:block;
+    margin-bottom:0.5rem;
+}
+
+
+/*
+input tag has the default box-sizing called CONTENT-BOX. 
+This means when you set width of element, border and padding is not included. 
+Thus actual width occupied will be greater than set if border and padding is present
+
+Select tag uses BORDER-BOX by default. Thus when you set width of element,
+this includes border and padding. Width of content will then be auto. 
+
+To solve issue of size difference, you can set both to SAME box-sizing;
+*/
+#name, #email, #number, select, #submit{
+    display:block;
+    width:100%;
+    border-radius: 0.25rem;
+    height:30px;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+
+/*resize for textarea is set to both by default.
+User can adjust both width and height by dragging.
+Set to vertical so user can only adjust height.
+*/
+
+textarea{
+    width:100%;
+    box-sizing:border-box;
+    height:120px;
+    resize:vertical;
+}

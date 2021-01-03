@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body id="background">
+    <main id="container">
+        <header>
+            <h1 id="title">NicBakes Survey Form</h1>
+            <p id="description">Thank you for taking time to help us improve our products and services</p>
+        </header>
+        <form id="survey-form">
+            <div id="form-group">
+                <label for="name" id="name-label">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div id="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="emailaddress" placeholder="Enter your email" required>
+            </div>
+            <div id="form-group">
+                <label for="number" id="number-label">Contact Number (optional)</label>
+                <input type="number" id="number" name="number" placeholder="Enter your number" min="80000000" max="99999999">
+            </div>
+            <div id="form-group">
+                <label for="dropdown">How did you first come to know about us?</label>
+                <select id="dropdown" name="know-about-us" required>
+                    <option selected disabled>Select an option</option>
+                    <option value="Website">Website</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Advertisements">Advertisements</option>
+                    <option value="Friend Recommendation">Friend Recommendation</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div id="form-group">
+                <label for="recommend">Would you recommend NicBakes to your friends?</label>
+                <input type="radio" id="recommend" name="would-you-recommend" value="Definitely">Definitely<br>
+                <input type="radio" id="recommend" name="would-you-recommend" value="Maybe">Maybe<br>
+                <input type="radio" id="recommend" name="would-you-recommend" value="Not sure">Not sure<br>
+            </div>
+            <div id="form-group">
+                <label for="dropdown">What is your favourite recipe of ours?</label>
+                <select id="dropdown" name="fav-recipe" required>
+                    <option selected disabled>Select an option</option>
+                    <option value="New York Cheesecake">New York Cheesecake</option>
+                    <option value="Tiramisu">Tiramisu</option>
+                    <option value="Blackforest">Blackforest</option>
+                    <option value="Carrot Cake">Carrot Cake</option>
+                    <option value="Almond Honey Cake">Almond Honey Cake</option>
+                </select>
+            </div>
+            <div id="form-group">
+                <label for="improvements">What do you think we can improve on?<span> (Check all that apply)</span></label>
+                <input type="checkbox" id="improvements" name="improvements" value="Quality of cakes">Quality of cakes<br>
+                <input type="checkbox" id="improvements" name="improvements" value="Customer Service">Customer Service<br>
+                <input type="checkbox" id="improvements" name="improvements" value="Delivery time">Delivery time<br>
+            </div>
+            <div id="form-group">
+                <label for="comments">Any suggestions or comments you would like to add?</label>
+                <textarea id="comments" name="comments" placeholder="Please enter your comments here..."></textarea>
+            </div>
+            <div id="form-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
